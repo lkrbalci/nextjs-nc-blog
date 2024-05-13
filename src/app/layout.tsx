@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { VT323 } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const vt323 = VT323({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-primary`}>{children}</body>
+      <body className={`${vt323.className} bg-primary` }>{children}</body>
     </html>
   );
 }
